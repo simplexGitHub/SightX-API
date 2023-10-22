@@ -1,0 +1,35 @@
+{
+  "title": "techStatus",
+  "type": "object",
+  "description": "The message will be sent as UDP 10HZ from SAS to FSG and will be considered as Keep-Alive message",
+  "examples": [
+    {
+      "techStatus": {
+        "status": "string"
+      }
+    }
+  ],
+  "properties": {
+    "techStatus": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "Created",
+            "Started",
+            "Connected",
+            "Error",
+            "EOS",
+            "Stopped",
+            "Terminated"
+          ],
+          "description": "The SMS tech statuses -\nCreated \t\nstream added on server, calls on stream object are not allowed yet\n\nStarted \t\nstream started\n\nConnected \t\nall sources are connected\n\nError \t\nstream error\n\nEOS \t\nend of stream\n\nStopped \t\nstream stopped\n\nTerminated \t\nstream removed from server"
+        }
+      },
+      "required": [
+        "status"
+      ]
+    }
+  }
+}
