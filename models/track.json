@@ -1,0 +1,80 @@
+{
+  "title": "track",
+  "type": "object",
+  "description": "Single track object ",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The track unique id"
+    },
+    "detectionData": {
+      "type": "object",
+      "required": [
+        "x1",
+        "y1",
+        "x2",
+        "y2"
+      ],
+      "properties": {
+        "x1": {
+          "type": "integer",
+          "description": "Top left location in frame pixels"
+        },
+        "y1": {
+          "type": "integer",
+          "description": "top-left Y coordinate in frame pixels"
+        },
+        "x2": {
+          "type": "integer",
+          "description": "bottom-right X coordinate in frame pixels"
+        },
+        "y2": {
+          "type": "integer",
+          "description": "bottom-right Y coordinate in frame pixels"
+        },
+        "className": {
+          "type": "string",
+          "description": "TBD"
+        }
+      }
+    },
+    "velocity": {
+      "type": "object",
+      "properties": {
+        "vx": {
+          "type": "number",
+          "description": "X vector component"
+        },
+        "vy": {
+          "type": "number",
+          "description": "y vector component"
+        }
+      }
+    },
+    "geoLocation": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number",
+          "description": "Lattitude in degrees XX.YYYYY"
+        },
+        "lon": {
+          "type": "number",
+          "description": "longitude in degrees XX.YYYYY"
+        },
+        "alt": {
+          "type": "number",
+          "description": "Altitude in meters"
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "detectionData"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "tracks",
+  "type": "object",
+  "description": "Array of tracks",
+  "properties": {
+    "tracks": {
+      "type": "array",
+      "items": {
+        "$ref": "./track.json"
+      }
+    }
+  }
+}
