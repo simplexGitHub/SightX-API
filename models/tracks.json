@@ -1,7 +1,7 @@
 {
   "title": "tracks",
   "type": "object",
-  "description": "Array of tracks",
+  "description": "Array of tracks sent as web socket at 5 hz. The SAS will be the server.",
   "properties": {
     "tracks": {
       "type": "array",
