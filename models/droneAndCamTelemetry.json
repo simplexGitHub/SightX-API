@@ -1,0 +1,64 @@
+{
+  "title": "droneAndCamTelemetry",
+  "type": "object",
+  "description": "Drone and camera telemetry sent from FSG to SAS as UDP 10 Hz",
+  "properties": {
+    "timestamp": {
+      "type": "number",
+      "description": "The FlightOps onboard telemetry"
+    },
+    "droneLocation": {
+      "$ref": "./location.json"
+    },
+    "flightAlt": {
+      "type": "number",
+      "description": "Flight alt ASL"
+    },
+    "droneAngles": {
+      "type": "object",
+      "properties": {
+        "pitch": {
+          "type": "number",
+          "description": "Pitch in miliradians"
+        },
+        "roll": {
+          "type": "number",
+          "description": "Roll in miliradians"
+        },
+        "yaw": {
+          "type": "number",
+          "description": "yaw - drone heading in miliradians"
+        }
+      }
+    },
+    "cameraAngles ": {
+      "type": "object",
+      "properties": {
+        "pitch": {
+          "type": "number",
+          "description": "Pitch in miliradians"
+        },
+        "roll": {
+          "type": "number",
+          "description": "Roll in miliradians"
+        },
+        "yaw": {
+          "type": "number",
+          "description": "yaw - drone heading in miliradians"
+        }
+      }
+    },
+    "horizontalFOV": {
+      "type": "number"
+    },
+    "verticalFOV": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "timestamp",
+    "flightAlt",
+    "horizontalFOV",
+    "verticalFOV"
+  ]
+}

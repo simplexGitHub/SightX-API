@@ -51,26 +51,8 @@
         }
       }
     },
-    "geoLocation": {
-      "type": "object",
-      "properties": {
-        "lat": {
-          "type": "number",
-          "description": "Lattitude in degrees XX.YYYYY"
-        },
-        "lon": {
-          "type": "number",
-          "description": "longitude in degrees XX.YYYYY"
-        },
-        "alt": {
-          "type": "number",
-          "description": "Altitude in meters"
-        }
-      },
-      "required": [
-        "lat",
-        "lon"
-      ]
+    "trackLocation": {
+      "$ref": "./location.json"
     }
   },
   "required": [

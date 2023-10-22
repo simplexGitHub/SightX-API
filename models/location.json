@@ -1,0 +1,21 @@
+{
+  "title": "location",
+  "type": "object",
+  "description": "A global geo location ",
+  "properties": {
+    "lat": {
+      "type": "number"
+    },
+    "lon": {
+      "type": "number"
+    },
+    "alt": {
+      "type": "number",
+      "description": "Geo location ground ASL"
+    }
+  },
+  "required": [
+    "lat",
+    "lon"
+  ]
+}

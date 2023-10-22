@@ -9,5 +9,30 @@
         "$ref": "./track.json"
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "tracks": [
+        {
+          "id": "string",
+          "detectionData": {
+            "x1": 0,
+            "y1": 0,
+            "x2": 0,
+            "y2": 0,
+            "className": "string"
+          },
+          "velocity": {
+            "vx": 0,
+            "vy": 0
+          },
+          "geoLocation": {
+            "lat": 0,
+            "lon": 0,
+            "alt": 0
+          }
+        }
+      ]
+    }
+  ]
 }
