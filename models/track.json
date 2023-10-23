@@ -2,6 +2,28 @@
   "title": "track",
   "type": "object",
   "description": "Single track object ",
+  "examples": [
+    {
+      "id": "string",
+      "detectionData": {
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "className": "string"
+      },
+      "velocity": {
+        "vx": 0,
+        "vy": 0
+      },
+      "trackLocation": {
+        "lat": 0,
+        "lon": 0,
+        "alt": 0
+      },
+      "timestamp": 0
+    }
+  ],
   "properties": {
     "id": {
       "type": "string",
@@ -53,10 +75,15 @@
     },
     "trackLocation": {
       "$ref": "./location.json"
+    },
+    "timestamp": {
+      "type": "number",
+      "description": "Track updated timestamp"
     }
   },
   "required": [
     "id",
-    "detectionData"
+    "detectionData",
+    "timestamp"
   ]
 }
