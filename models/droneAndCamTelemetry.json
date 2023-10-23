@@ -2,6 +2,29 @@
   "title": "droneAndCamTelemetry",
   "type": "object",
   "description": "Drone and camera telemetry sent from FSG to SAS as UDP 10 Hz",
+  "examples": [
+    {
+      "timestamp": 1356780567,
+      "droneLocation": {
+        "lat": 32.5,
+        "lon": 34.6,
+        "alt": 70
+      },
+      "flightAlt": 80,
+      "droneAngles": {
+        "pitch": -1.13,
+        "roll": 0.002,
+        "yaw": 2.3
+      },
+      "cameraAngles ": {
+        "pitch": 1.3,
+        "roll": 0.006,
+        "yaw": 1.77
+      },
+      "horizontalFOV": 3.6,
+      "verticalFOV": 4.7
+    }
+  ],
   "properties": {
     "timestamp": {
       "type": "number",
@@ -12,7 +35,7 @@
     },
     "flightAlt": {
       "type": "number",
-      "description": "Flight alt ASL"
+      "description": "Flight alt AGL"
     },
     "droneAngles": {
       "type": "object",
@@ -38,21 +61,19 @@
           "type": "number",
           "description": "Pitch in miliradians"
         },
-        "roll": {
-          "type": "number",
-          "description": "Roll in miliradians"
-        },
         "yaw": {
           "type": "number",
-          "description": "yaw - drone heading in miliradians"
+          "description": "yaw - drone heading in miliradians true north"
         }
       }
     },
     "horizontalFOV": {
-      "type": "number"
+      "type": "number",
+      "description": "Degrees"
     },
     "verticalFOV": {
-      "type": "number"
+      "type": "number",
+      "description": "Degrees"
     }
   },
   "required": [
@@ -60,28 +81,5 @@
     "flightAlt",
     "horizontalFOV",
     "verticalFOV"
-  ],
-  "examples": [
-    {
-      "timestamp": 1356780567,
-      "droneLocation": {
-        "lat": 32.5,
-        "lon": 34.6,
-        "alt": 70
-      },
-      "flightAlt": 80,
-      "droneAngles": {
-        "pitch": -1.13,
-        "roll": 0.002,
-        "yaw": 2.3
-      },
-      "cameraAngles ": {
-        "pitch": 1.3,
-        "roll": 0.006,
-        "yaw": 1.77
-      },
-      "horizontalFOV": 3.6,
-      "verticalFOV": 4.7
-    }
   ]
 }
