@@ -63,7 +63,7 @@
   ],
   "examples": [
     {
-      "timestamp": 0,
+      "timestamp": 1356780567,
       "droneLocation": {
         "lat": 32.5,
         "lon": 34.6,
