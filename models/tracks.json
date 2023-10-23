@@ -16,20 +16,20 @@
         {
           "id": "string",
           "detectionData": {
-            "x1": 0,
-            "y1": 0,
-            "x2": 0,
-            "y2": 0,
+            "x1": 5,
+            "y1": 7,
+            "x2": 10,
+            "y2": 15,
             "className": "string"
           },
           "velocity": {
-            "vx": 0,
-            "vy": 0
+            "vx": 4.6,
+            "vy": 3.5
           },
           "geoLocation": {
-            "lat": 0,
-            "lon": 0,
-            "alt": 0
+            "lat": 32.7,
+            "lon": 34.8,
+            "alt": 65
           }
         }
       ]
