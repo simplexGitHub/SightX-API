@@ -1,7 +1,7 @@
 {
   "title": "techStatus",
   "type": "object",
-  "description": "The message will be sent as UDP 10HZ from SAS to FSG and will be considered as Keep-Alive message",
+  "description": "The message will be sent as web socket 2HZ from SAS to FSG and will be considered as Keep-Alive message",
   "examples": [
     {
       "techStatus": {
@@ -30,6 +30,14 @@
       "required": [
         "status"
       ]
+    },
+    "": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        }
+      }
     }
   }
 }
