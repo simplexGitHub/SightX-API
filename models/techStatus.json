@@ -15,6 +15,23 @@
       "properties": {
         "status": {
           "type": "string",
+          "description": " ServerUp,   ///< sdk connected to server\n    ServerDown, ///< sdk disconnected from server\n    InvalidVersion ///< sdk connected to server, but server version is different from sdk version\n",
+          "enum": [
+            "ServerUp",
+            "ServerDown",
+            "InvalidVersion"
+          ]
+        }
+      },
+      "required": [
+        "status"
+      ]
+    },
+    "straemStatus": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
           "enum": [
             "Created",
             "Started",
@@ -24,18 +41,7 @@
             "Stopped",
             "Terminated"
           ],
-          "description": "The SMS tech statuses -\nCreated \t\nstream added on server, calls on stream object are not allowed yet\n\nStarted \t\nstream started\n\nConnected \t\nall sources are connected\n\nError \t\nstream error\n\nEOS \t\nend of stream\n\nStopped \t\nstream stopped\n\nTerminated \t\nstream removed from server"
-        }
-      },
-      "required": [
-        "status"
-      ]
-    },
-    "": {
-      "type": "object",
-      "properties": {
-        "status": {
-          "type": "string"
+          "description": "Created,   ///< stream added on server, calls on stream object are not allowed yet\n    Started,   ///< stream started\n    Connected, ///< all sources are connected\n    Error,     ///< stream error\n    EOS,       ///< end of stream\n    Stopped,   ///< stream stopped\n    Terminated ///< stream removed from server\n"
         }
       }
     }
