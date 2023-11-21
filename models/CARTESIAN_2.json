@@ -1,0 +1,22 @@
+{
+  "title": "CARTESIAN_2",
+  "x-stoplight": {
+    "id": "d9mcxv4ukv3nc"
+  },
+  "type": "object",
+  "properties": {
+    "x": {
+      "type": "number",
+      "example": 1080
+    },
+    "y": {
+      "type": "number",
+      "example": 1920
+    }
+  },
+  "required": [
+    "x",
+    "y"
+  ],
+  "description": ""
+}

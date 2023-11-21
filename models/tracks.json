@@ -2,14 +2,6 @@
   "title": "tracks",
   "type": "object",
   "description": "Array of tracks sent as web socket at 5 hz. The SAS will be the server.",
-  "properties": {
-    "tracks": {
-      "type": "array",
-      "items": {
-        "$ref": "./track.json"
-      }
-    }
-  },
   "examples": [
     {
       "tracks": [
@@ -55,5 +47,29 @@
         }
       ]
     }
+  ],
+  "properties": {
+    "tracks": {
+      "type": "array",
+      "items": {
+        "$ref": "./track.json"
+      }
+    },
+    "pictureResolution": {
+      "type": "string",
+      "description": "video resolution (x, y)"
+    },
+    "sasStatus": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ],
+      "description": "the external service status"
+    }
+  },
+  "required": [
+    "pictureResolution",
+    "sasStatus"
   ]
 }
