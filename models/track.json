@@ -31,6 +31,7 @@
     },
     "detectionData": {
       "type": "object",
+      "description": "The coordinates system of the detections will be as followed -\nThe coordinates will be between 0-1 in x and y as refference related to the frame.\nThe top left be (0,0) and bottom right will be (1,1).\nIn case of coordinates smaller then 0 or greater then 1 it will be considered as 0 or 1 accordinly.",
       "required": [
         "x1",
         "y1",
@@ -40,24 +41,24 @@
       ],
       "properties": {
         "x1": {
-          "type": "integer",
-          "description": "Top left location in frame pixels"
+          "type": "number",
+          "description": "Top left location in frame between 0-1"
         },
         "y1": {
-          "type": "integer",
-          "description": "top-left Y coordinate in frame pixels"
+          "type": "number",
+          "description": "top-left Y coordinate in frame  between 0-1"
         },
         "x2": {
           "type": "integer",
-          "description": "bottom-right X coordinate in frame pixels"
+          "description": "bottom-right X coordinate in frame  between 0-1"
         },
         "y2": {
           "type": "integer",
-          "description": "bottom-right Y coordinate in frame pixels"
+          "description": "bottom-right Y coordinate in frame  between 0-1"
         },
         "className": {
           "type": "string",
-          "description": "TBD",
+          "description": "The class name",
           "enum": [
             "Person",
             "Vehicle"
