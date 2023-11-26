@@ -42,15 +42,15 @@
       "properties": {
         "pitch": {
           "type": "number",
-          "description": "Pitch in miliradians"
+          "description": "Pitch in miliradians -\n0 - horizontal\n(+) - up\n(-) - down"
         },
         "roll": {
           "type": "number",
-          "description": "Roll in miliradians"
+          "description": "Roll in miliradians. \n(+)  roll right\n(-)  roll left"
         },
         "yaw": {
           "type": "number",
-          "description": "yaw - drone heading in miliradians"
+          "description": "yaw - drone heading in miliradians reffernecd to the true north"
         }
       }
     },
@@ -59,11 +59,11 @@
       "properties": {
         "pitch": {
           "type": "number",
-          "description": "Pitch in miliradians"
+          "description": "Pitch in miliradians -\n0 - horizontal\n(+) - up\n(-) - down"
         },
         "yaw": {
           "type": "number",
-          "description": "yaw - drone heading in miliradians true north"
+          "description": "yaw - gimbal heading in miliradians refferenced with drone heading"
         }
       }
     },
